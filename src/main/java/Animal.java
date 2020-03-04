@@ -16,6 +16,7 @@ public class Animal {
     }
 
     public boolean isVageterian() {
+
         return vageterian;
     }
 
@@ -46,4 +47,6 @@ public class Animal {
     public void setAnimalType(String animalType) {
         this.animalType = animalType;
     }
+
+
 }

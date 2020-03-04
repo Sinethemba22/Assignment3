@@ -10,24 +10,33 @@ public class PetTest {
     @Test
     public void isVageterian() {
 
-        Assert.assertTrue("Its a vegiterian",true);
+       dog.setVageterian(true);
+       Assert.assertTrue("Dog is a vegeterian", false);
 
     }
 
     @Test
     public void getEats() {
+        dog.setEats("Fish");
+        Assert.assertEquals("Fish","Milk");
+
+
     }
 
     @Test
     public void setNumberOfLegs() {
+        dog.setNumberOfLegs(3);
+        Assert.assertEquals(4,dog.getNumberOfLegs());
 
 
     }
 
     @Test
     public void setAnimalType() {
-        cat.setEats("Dagga muffins");
-        //Assert.assertEquals("Dagga muffins", getEats();
+     dog.setAnimalType("Pig");
+     Assert.assertEquals("Pig", "Dog");
 
     }
+
+
 }
